@@ -11,11 +11,16 @@ public class Main
     int op = 0;
     bool entrando = true;
     RetoUno retoUno = new RetoUno();
+    RetoDos retoDos = new RetoDos();
     do
     {
         try{
             Console.WriteLine("|------------------------PushUp Dev Farit---------------------------|");
             Console.WriteLine("|                       1. Reto Fibonacci                           |");
+            Console.WriteLine("|                       2. Reto 2                                   |");
+            Console.WriteLine("|                       3. Reto 3                                   |");
+            Console.WriteLine("|                       4. Reto 4                                   |");
+            Console.WriteLine("|                       5. Reto 5                                   |");
             Console.WriteLine("|                       0. Salir                                    |");
             Console.WriteLine("|___________________________________________________________________|");
             Console.Write("--> ");
@@ -33,6 +38,11 @@ public class Main
                     Console.Clear();
                     Console.WriteLine("Bienvenido al ejercicio Fibonacci");
                     retoUno.Reto1();
+                break;
+                case 2:
+                    Console.Clear();
+                    Console.WriteLine("Bienvenido al ejercicio 2");
+                    retoDos.Reto2();
                 break;
                 default:
                     Console.WriteLine("Te Saliste del RANGO");
