@@ -1,7 +1,10 @@
-﻿internal class Program
+using PruebaPushUp.Menu;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Main main = new Main();
+        main.MenuMain();
     }
 }
