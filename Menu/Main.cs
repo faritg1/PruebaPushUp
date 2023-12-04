@@ -15,7 +15,7 @@ public class Main
     RetoTres retoTres = new RetoTres();
     do
     {
-        /* try{ */
+        try{
             Console.WriteLine("|------------------------PushUp Dev Farit---------------------------|");
             Console.WriteLine("|                       1. Reto Fibonacci                           |");
             Console.WriteLine("|___________________________________________________________________|");
@@ -42,13 +42,13 @@ public class Main
                     Console.Clear();
                 break;
             }
-        /* }
+        }
         catch (Exception ex){
             Console.WriteLine("ALGO HIZO MAL!!! {0}",ex.Message.ToString());
             Console.Write("ESPERE UN MOMENTO ...");
             Thread.Sleep(2000);
             Console.Clear();
-        } */
+        }
     } while (entrando);
 }
 }
