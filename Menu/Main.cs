@@ -12,9 +12,10 @@ public class Main
     bool entrando = true;
     RetoUno retoUno = new RetoUno();
     RetoDos retoDos = new RetoDos();
+    RetoTres retoTres = new RetoTres();
     do
     {
-        try{
+        /* try{ */
             Console.WriteLine("|------------------------PushUp Dev Farit---------------------------|");
             Console.WriteLine("|                       1. Reto Fibonacci                           |");
             Console.WriteLine("|                       2. Reto 2                                   |");
@@ -44,6 +45,11 @@ public class Main
                     Console.WriteLine("Bienvenido al ejercicio 2");
                     retoDos.Reto2();
                 break;
+                case 3:
+                    Console.Clear();
+                    Console.WriteLine("Bienvenido al ejercicio 3");
+                    retoTres.retoTres();
+                break;
                 default:
                     Console.WriteLine("Te Saliste del RANGO");
                     Console.Write("ESPERE UN MOMENTO ...");
@@ -51,13 +57,13 @@ public class Main
                     Console.Clear();
                 break;
             }
-        }
+        /* }
         catch (Exception ex){
             Console.WriteLine("ALGO HIZO MAL!!! {0}",ex.Message.ToString());
             Console.Write("ESPERE UN MOMENTO ...");
             Thread.Sleep(2000);
             Console.Clear();
-        }
+        } */
     } while (entrando);
 }
 }
